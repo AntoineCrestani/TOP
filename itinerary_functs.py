@@ -372,6 +372,16 @@ def get_user_radius_df(df,start_point,max_distance):
     # Conservation des points dans le rayon du point de départ du voyageur
     return app_df[app_df["Distance_start_point"] <= max_distance].copy()
 
+def get_nearest_point(df,start_point):
+    app_df=df.copy()
+    #Ensemble des coordonnées
+    app_df["Coord"] = list(zip(app_df["Latitude"], app_df["Longitude"])) # Coord tupples
+
+    # Calcul de la distance au point de départ
+    app_df["Distance_start_point"] = app_df["Coord"].apply(lambda point: hs.haversine(start_point, point))
+    
+    min_dist_idx=app_df["Distance_start_point"].idxmin()
+    return app_df.iloc[min_dist_idx]["URI_ID_du_POI"]
 
 
 def ajoute_coords(clustered):
@@ -381,19 +391,31 @@ def ajoute_coords(clustered):
 
 
 def plot_itineraire(itineraire,df,map_to_plot,color_palette=FOLIUM_COLORS,icon='star'):
+    #setup first POI, otherwise it doesnt work too well. 
+    first_poi=itineraire[list(itineraire.keys())[0]][0]
+    nom=df[df["URI_ID_du_POI"]==first_poi]["Nom_du_POI"]
+    color=color_palette[0]
+    icon_color = 'dimgray' if color == 'white' else 'white'
+    folium.Marker(location= get_pos(first_poi,df),
+                popup= f"<h5>Jour 1, étape 1 </h5><p>{nom.item()}</p>",
+                icon= folium.Icon(color= color_palette[0], icon_color= icon_color, icon=icon)
+                ).add_to(map_to_plot)
     for day in range(len(itineraire.keys())):
+        #on parcourt les jours
         trajet= itineraire[list(itineraire.keys())[day]]
         color_idx=day
         color = color_palette[color_idx]
         icon_color = 'dimgray' if color == 'white' else 'white'
-        for idx_poi in range(len(trajet)):
+        for idx_poi in range(1,len(trajet)):
+            
             poi=trajet[idx_poi]
             nom=df[df["URI_ID_du_POI"]==poi]["Nom_du_POI"]
             folium.Marker(
                 location= get_pos(poi,df),
-                popup= f"<h5>Jour {day} , étape {idx_poi}</h5><p>{nom.item()}</p>",
+                popup= f"<h5>Jour {day+1} , etape {idx_poi+1}</h5><p>{nom.item()}</p>",
                 icon= folium.Icon(color= color, icon_color= icon_color, icon=icon)
                 ).add_to(map_to_plot)
+    return map_to_plot
 
 
 def setup():
