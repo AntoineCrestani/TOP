@@ -9,7 +9,7 @@ Uses dash and mongodb
     _ src => contains the dash app and other assets necessary ( city names, ML and DB scripts, user profiles...)
     _ useful => potentially useful commands ( deprecated)
     _ docker ( work in progress)
-
+    _ deprecated => older code, probably not useful anymore ? 
 
 /src
   has all the files necessary for execution of the code
