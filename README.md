@@ -1,5 +1,5 @@
 
-This project has the goal of creating vacation itinerares in Occitania, allowing for different user types and starting positions.
+This project has the goal of creating vacation itineraries in Occitania, allowing for different user types and starting positions.
 Uses dash and mongodb 
 # File architecture
 => TOP
@@ -14,6 +14,12 @@ Uses dash and mongodb
 /src
   has all the files necessary for execution of the code
 
+
+Requirements : 
+to install all required libraries go to src and run
+    pip install -r requirements.txt
+Install Mongodb : https://www.mongodb.com/try/download/compass
+Install mongo tools : https://www.mongodb.com/try/download/database-tools
 
 # loading the data
 go to scraping folder
