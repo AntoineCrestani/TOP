@@ -1,0 +1,8 @@
+we could do a docker image for the dash app
+
+and then a bash file that sets up the mongo db and then launches the docker image
+
+
+
+
+mongorestore -d test_eval_2 ~/project_evaluation/dump/test_eval/
