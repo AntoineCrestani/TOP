@@ -18,9 +18,10 @@ Uses dash and mongodb
 Requirements : 
 to install all required libraries go to src and run
     pip install -r requirements.txt
-Install Mongodb : https://www.mongodb.com/try/download/compass
+Install mongo server : https://www.mongodb.com/try/download/community
+Install Mongodb Compass ( GUI de mongo) : https://www.mongodb.com/try/download/compass
 Install mongo tools : https://www.mongodb.com/try/download/database-tools
-
+Add mongo  bin ... to $PATH 
 # loading the data
 go to scraping folder
 run command :
