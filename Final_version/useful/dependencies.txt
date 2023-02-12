@@ -1,0 +1,34 @@
+pip install folium
+pip install networkx
+pip install haversine
+pip install -U scikit-learn
+pip install dash
+pip install pandas
+
+
+
+dash 
+dash.dependencies
+dash_bootstrap_components import Input, Output, State
+folium 
+os
+calendar
+time
+operator
+numpy
+pandas
+genericpath
+networkx
+haversine
+sklearn.cluster
+pymongo
+json, csv, os
+datetime
+subprocess
+
+
+
+from city_names import cities
+from itinerary_ML import Itinerary_ML as IT_ML
+from userProfile 
+from itinerary_DB import Itinerary_DB as IT_DB

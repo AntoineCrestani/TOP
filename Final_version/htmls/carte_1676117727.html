@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd250c5c1e845f809875472f2f4043d3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bd250c5c1e845f809875472f2f4043d3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bd250c5c1e845f809875472f2f4043d3 = L.map(
+                "map_bd250c5c1e845f809875472f2f4043d3",
+                {
+                    center: [43.812961, 4.345543],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_11dd0e19f7219c56d92de29696931962 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var marker_411dbe9ab573bb04e128410233e092c4 = L.marker(
+                [43.812961, 4.345543],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_3e38476de1adb62c20b4395ce2672dc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_411dbe9ab573bb04e128410233e092c4.setIcon(icon_3e38476de1adb62c20b4395ce2672dc0);
+        
+    
+        var popup_c8bf3d65b847a6abd3d4c0437355669f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_850a76af397d300567ab18fe96c34bfe = $(`<div id="html_850a76af397d300567ab18fe96c34bfe" style="width: 100.0%; height: 100.0%;"><h5>Jour 1, étape 1 </h5><p>AQUATROPIC</p></div>`)[0];
+                popup_c8bf3d65b847a6abd3d4c0437355669f.setContent(html_850a76af397d300567ab18fe96c34bfe);
+            
+        
+
+        marker_411dbe9ab573bb04e128410233e092c4.bindPopup(popup_c8bf3d65b847a6abd3d4c0437355669f)
+        ;
+
+        
+    
+    
+            var marker_e5ee43900876c71834be167085a592cf = L.marker(
+                [43.81406, 4.344313],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_863793d15011a67e4a63927403104114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5ee43900876c71834be167085a592cf.setIcon(icon_863793d15011a67e4a63927403104114);
+        
+    
+        var popup_2326c259891210e30bcac8a35fc041ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb4b4a0bd1b9dd4f24a808e0e257bd85 = $(`<div id="html_cb4b4a0bd1b9dd4f24a808e0e257bd85" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 2</h5><p>Hôtel Restaurant Ibis Nîmes Ouest</p></div>`)[0];
+                popup_2326c259891210e30bcac8a35fc041ba.setContent(html_cb4b4a0bd1b9dd4f24a808e0e257bd85);
+            
+        
+
+        marker_e5ee43900876c71834be167085a592cf.bindPopup(popup_2326c259891210e30bcac8a35fc041ba)
+        ;
+
+        
+    
+    
+            var marker_d69a35abea753506795b75d2ca776d07 = L.marker(
+                [43.813797, 4.344597],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_015f917e7031348a1176a527cc142ab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d69a35abea753506795b75d2ca776d07.setIcon(icon_015f917e7031348a1176a527cc142ab9);
+        
+    
+        var popup_801903e906ddff5a2b4cd16d0d7d0d74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67a2c9113bf8571bbbc5ac090989f1b7 = $(`<div id="html_67a2c9113bf8571bbbc5ac090989f1b7" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 3</h5><p>Hôtel Ibis Nîmes Ouest</p></div>`)[0];
+                popup_801903e906ddff5a2b4cd16d0d7d0d74.setContent(html_67a2c9113bf8571bbbc5ac090989f1b7);
+            
+        
+
+        marker_d69a35abea753506795b75d2ca776d07.bindPopup(popup_801903e906ddff5a2b4cd16d0d7d0d74)
+        ;
+
+        
+    
+    
+            var marker_7360deb6280de84eed3db484eb665143 = L.marker(
+                [43.81478, 4.346542],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_d95472beef3f97f04f76615650bbf5d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7360deb6280de84eed3db484eb665143.setIcon(icon_d95472beef3f97f04f76615650bbf5d6);
+        
+    
+        var popup_aefba84a0dbde6d6d678e78964931ca3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7be696a5333654d0a451f7a43b0be457 = $(`<div id="html_7be696a5333654d0a451f7a43b0be457" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 4</h5><p>Grand Hôtel</p></div>`)[0];
+                popup_aefba84a0dbde6d6d678e78964931ca3.setContent(html_7be696a5333654d0a451f7a43b0be457);
+            
+        
+
+        marker_7360deb6280de84eed3db484eb665143.bindPopup(popup_aefba84a0dbde6d6d678e78964931ca3)
+        ;
+
+        
+    
+    
+            var marker_fa3ff0117e35ed98b18499c2212f9e50 = L.marker(
+                [43.81498, 4.344949],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_25ccc501886e00ea9d9f49c154d0f904 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa3ff0117e35ed98b18499c2212f9e50.setIcon(icon_25ccc501886e00ea9d9f49c154d0f904);
+        
+    
+        var popup_9b610490f0211401d77d04952008a321 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cf895b4e2f4fd0d6ab9f3e8405c51b1 = $(`<div id="html_5cf895b4e2f4fd0d6ab9f3e8405c51b1" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 5</h5><p>The Originals City Nîmes Costières</p></div>`)[0];
+                popup_9b610490f0211401d77d04952008a321.setContent(html_5cf895b4e2f4fd0d6ab9f3e8405c51b1);
+            
+        
+
+        marker_fa3ff0117e35ed98b18499c2212f9e50.bindPopup(popup_9b610490f0211401d77d04952008a321)
+        ;
+
+        
+    
+    
+            var marker_dd5818921991f4c7fbc94cbf7476db85 = L.marker(
+                [43.81539, 4.345492],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_aa2190a881f84fb0c6a48cb7e92a3dde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd5818921991f4c7fbc94cbf7476db85.setIcon(icon_aa2190a881f84fb0c6a48cb7e92a3dde);
+        
+    
+        var popup_003fd048f8e4700d8e0b513198633395 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b5b33dd4d674facb14b20274b4c4eb9 = $(`<div id="html_2b5b33dd4d674facb14b20274b4c4eb9" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 6</h5><p>Hôtel C Suites</p></div>`)[0];
+                popup_003fd048f8e4700d8e0b513198633395.setContent(html_2b5b33dd4d674facb14b20274b4c4eb9);
+            
+        
+
+        marker_dd5818921991f4c7fbc94cbf7476db85.bindPopup(popup_003fd048f8e4700d8e0b513198633395)
+        ;
+
+        
+    
+    
+            var marker_4b984a30ffbcf7c7d9c9e91dafb0c153 = L.marker(
+                [43.81556, 4.346785],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_84bd2c560c7d587814fd6bbd22fea91d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b984a30ffbcf7c7d9c9e91dafb0c153.setIcon(icon_84bd2c560c7d587814fd6bbd22fea91d);
+        
+    
+        var popup_9c2f5ca4c0753e1d575aefd678fa800c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa18b7550efdd5e6f4502201f2216498 = $(`<div id="html_aa18b7550efdd5e6f4502201f2216498" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 7</h5><p>Hôtel B&B Nîmes Ville Active</p></div>`)[0];
+                popup_9c2f5ca4c0753e1d575aefd678fa800c.setContent(html_aa18b7550efdd5e6f4502201f2216498);
+            
+        
+
+        marker_4b984a30ffbcf7c7d9c9e91dafb0c153.bindPopup(popup_9c2f5ca4c0753e1d575aefd678fa800c)
+        ;
+
+        
+    
+    
+            var marker_7aa178253a7d8c66ce30d84d2b18c7c2 = L.marker(
+                [43.81466, 4.344781],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_7afbec7b7b79f7057d6789da36a0fcbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7aa178253a7d8c66ce30d84d2b18c7c2.setIcon(icon_7afbec7b7b79f7057d6789da36a0fcbf);
+        
+    
+        var popup_a5cc4c8dc39a52c2532c9d445113df3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdf40e4e1c72c629d2f1e29240b97969 = $(`<div id="html_fdf40e4e1c72c629d2f1e29240b97969" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 8</h5><p>Hôtel Kyriad Nîmes Ouest</p></div>`)[0];
+                popup_a5cc4c8dc39a52c2532c9d445113df3d.setContent(html_fdf40e4e1c72c629d2f1e29240b97969);
+            
+        
+
+        marker_7aa178253a7d8c66ce30d84d2b18c7c2.bindPopup(popup_a5cc4c8dc39a52c2532c9d445113df3d)
+        ;
+
+        
+    
+    
+            var marker_aa1faa3ae57c61ff83a051be49c7018d = L.marker(
+                [43.814906, 4.34502],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_cae9bfe893d04deba0fd1c517857101b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa1faa3ae57c61ff83a051be49c7018d.setIcon(icon_cae9bfe893d04deba0fd1c517857101b);
+        
+    
+        var popup_996edc30cf2b3214a1cc6e109d87a86a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c3862291cb2f8ffeaa80c54e995f9cf = $(`<div id="html_1c3862291cb2f8ffeaa80c54e995f9cf" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 9</h5><p>Hôtel Kyriad Nîmes Ouest</p></div>`)[0];
+                popup_996edc30cf2b3214a1cc6e109d87a86a.setContent(html_1c3862291cb2f8ffeaa80c54e995f9cf);
+            
+        
+
+        marker_aa1faa3ae57c61ff83a051be49c7018d.bindPopup(popup_996edc30cf2b3214a1cc6e109d87a86a)
+        ;
+
+        
+    
+    
+            var marker_8af3020f82eebd755b15883706fa8f43 = L.marker(
+                [43.814835, 4.344408],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_2ee066d68725d748ab87129c07494156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8af3020f82eebd755b15883706fa8f43.setIcon(icon_2ee066d68725d748ab87129c07494156);
+        
+    
+        var popup_211c65e209447f5e0d6da245e908ff9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5dd5ef901af71d1e68068b7b0724b4 = $(`<div id="html_ec5dd5ef901af71d1e68068b7b0724b4" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 10</h5><p>The Originals City Nîmes Costières</p></div>`)[0];
+                popup_211c65e209447f5e0d6da245e908ff9a.setContent(html_ec5dd5ef901af71d1e68068b7b0724b4);
+            
+        
+
+        marker_8af3020f82eebd755b15883706fa8f43.bindPopup(popup_211c65e209447f5e0d6da245e908ff9a)
+        ;
+
+        
+    
+    
+            var marker_49d1998c54ebaf9ef3aaa1da6374b214 = L.marker(
+                [43.81647, 4.346023],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_d0136670b3b0294adeb9be189b040dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49d1998c54ebaf9ef3aaa1da6374b214.setIcon(icon_d0136670b3b0294adeb9be189b040dc7);
+        
+    
+        var popup_4927d66d393f91d4b1e16be30a8b1007 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c113e73d069b3f0afee6405c8246262 = $(`<div id="html_2c113e73d069b3f0afee6405c8246262" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 11</h5><p>Hôtel Restaurant Nîmotel</p></div>`)[0];
+                popup_4927d66d393f91d4b1e16be30a8b1007.setContent(html_2c113e73d069b3f0afee6405c8246262);
+            
+        
+
+        marker_49d1998c54ebaf9ef3aaa1da6374b214.bindPopup(popup_4927d66d393f91d4b1e16be30a8b1007)
+        ;
+
+        
+    
+    
+            var marker_ffc2165b467af4e4c40d551a91cce269 = L.marker(
+                [43.814, 4.344146],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_a91bf914d8d6101386fb482c0c66e744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffc2165b467af4e4c40d551a91cce269.setIcon(icon_a91bf914d8d6101386fb482c0c66e744);
+        
+    
+        var popup_dc8f5dd3f5a3dbc039d85fd8301f46e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04f3c13812a4156442ebf0893516b9a6 = $(`<div id="html_04f3c13812a4156442ebf0893516b9a6" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 12</h5><p>Restaurant Ibis</p></div>`)[0];
+                popup_dc8f5dd3f5a3dbc039d85fd8301f46e2.setContent(html_04f3c13812a4156442ebf0893516b9a6);
+            
+        
+
+        marker_ffc2165b467af4e4c40d551a91cce269.bindPopup(popup_dc8f5dd3f5a3dbc039d85fd8301f46e2)
+        ;
+
+        
+    
+    
+            var marker_497e6ee58224e8125e94c37c54946f94 = L.marker(
+                [43.815177, 4.346993],
+                {}
+            ).addTo(map_bd250c5c1e845f809875472f2f4043d3);
+        
+    
+            var icon_f6d9ce15c834b7402b049201ae3bf4cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_497e6ee58224e8125e94c37c54946f94.setIcon(icon_f6d9ce15c834b7402b049201ae3bf4cc);
+        
+    
+        var popup_ea00068dcacba26bb764b8b8ad25a628 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_260fc79392bb1c889d8c992d9e8b065e = $(`<div id="html_260fc79392bb1c889d8c992d9e8b065e" style="width: 100.0%; height: 100.0%;"><h5>Jour 1 , etape 13</h5><p>Hôtel B&B</p></div>`)[0];
+                popup_ea00068dcacba26bb764b8b8ad25a628.setContent(html_260fc79392bb1c889d8c992d9e8b065e);
+            
+        
+
+        marker_497e6ee58224e8125e94c37c54946f94.bindPopup(popup_ea00068dcacba26bb764b8b8ad25a628)
+        ;
+
+        
+    
+</script>
+</html>
