@@ -2,9 +2,22 @@
 import json
 from pprint import pprint
 from pymongo import MongoClient
+import get_flux 
+import zipfile
+import os
+# \\ flux is doubled because of unzipping shenanigans . doesnt really matter
 
-with open(".\\flux\\index.json", "r",encoding="utf8") as read_file:
+if not(os.path.exists(".\\flux\\flux\\index.json")):
+    print(" downloading file\n")
+    print(get_flux.import_flux())
+    print("unzipping")
+    with zipfile.ZipFile("flux.zip","r") as zip_ref:
+        zip_ref.extractall("flux")
+    print("done unzipping")
+
+with open(".\\flux\\flux\\index.json", "r",encoding="utf8") as read_file:
     data = json.load(read_file)
+
 
 pprint(len(data))
 
@@ -141,7 +154,7 @@ def check_pos(lat,longi):
 file_obj_data = []
 
 for file_obj in data:
-    with open(".\\flux\\objects\\"+file_obj["file"], "r",encoding="utf8",) as read_file:
+    with open(".\\flux\\flux\\objects\\"+file_obj["file"], "r",encoding="utf8",) as read_file:
        json_obj = json.load(read_file)
 
        #pprint(json_obj["@type"])
@@ -321,12 +334,3 @@ for poi in file_obj_data:
         poi["features"] if "features" in poi else [],
         poi["themes"] if "themes" in poi else []]))
 
-import csv
-
-
-
-# with open('.\\csvs\\POIs_'+str(ts)+'.csv', 'w', newline='') as file:
-#      writer = csv.writer(file)
-#      writer.writerows(csv_rows)
-
-#pprint(file_obj_data[0])

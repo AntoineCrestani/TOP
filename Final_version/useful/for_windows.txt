@@ -1,5 +1,5 @@
 to create the dump go to scraping directory 
 python json_data_to_mongo.py
 
-then go back to main foled itin_vac///
+then go back to main folder itin_vac///
 systemctl start mongod

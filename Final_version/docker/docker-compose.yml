@@ -1,0 +1,24 @@
+version: '3'
+services:
+  dash:
+    build:
+      context: app
+      dockerfile: Dockerfile
+    container_name: Dash_itineraire
+    image: ##TODO 
+    environment:
+      APP_PORT: 8050
+    volumes:
+      - appdata:/data/dash
+
+
+
+    mongo:
+        image: mongo
+        ports:
+            - 27017:27017
+        volumes:
+            - appdata:/data/db
+volumes:
+  appdata:
+    driver: local
