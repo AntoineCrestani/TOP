@@ -27,12 +27,6 @@ app = dash.Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 
-city_datalist = html.Datalist(
-    id='list-suggested-cities',
-    children=[html.Option(value=city.strip("/\s /\n /\t /\"   "))
-              for city in cities]
-)
-
 
 app.layout = html.Div(
     children=[
@@ -91,7 +85,7 @@ app.layout = html.Div(
                                         className="text_query"),
                                 dcc.Dropdown(className="dropdown",
                                              id="city_dd",
-                                             options=[{"label": city.strip("/\n /\t /\"   "), "value": city.strip("/\n /\t /\"   ")} for city in cities]
+                                             options=[{"label": city, "value": city} for city in cities]
                                              ),
                                 html.H3("Durée de voyage *",
                                         className="text_query"),
